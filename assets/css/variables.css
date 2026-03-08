@@ -1,0 +1,37 @@
+:root {
+
+    /*typograph desktop*/
+    --text-small: 0.625rem;
+    --text-small: 0.813rem;
+    --text-base: 1rem;
+    --text-h6: 1.25rem;
+    --text-h5: 1.563rem;
+    --text-h4: 1.938rem;
+    --text-h3: 2.438rem;
+    --text-h2: 3.063rem;
+    --text-h1: 3.813rem;
+
+    /*Color variables*/
+    --color-main: #7F1D8B;
+    --color-secundary: #7E43BE;
+    --color-highlight: #F7C6A1;
+    --color-text-main: #251F37;
+    --color-text-muted: #998FA3;
+    --color-text-light: #FAF6FE;
+
+    /* Colors Darker tones to help with gradients*/
+    --color-main-tone-1: #6C1478;
+    --color-main-tone-2: #600E6B;
+    --color-main-tone-3: #54085E;
+    --color-main-tone-4: #44024D;
+
+    --color-secundary-tone-1: #7135B1;
+    --color-secundary-tone-2: #642AA2;
+    --color-secundary-tone-3: #572092;
+    --color-secundary-tone-4: #4C1485;
+
+    /*Gradients variables*/
+    --gradient-linear-background: linear-gradient(270deg, #44024D 30.29%, #54085E 100%);
+    --gradient-linear-components: linear-gradient(270deg, #6C1478 13.46%, #7E43BE 96.63%);
+    --gradient-linear-text: linear-gradient(270deg, #7F1D8B 30.29%, #7E43BE 100%);
+}

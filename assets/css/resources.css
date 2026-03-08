@@ -1,0 +1,119 @@
+#resources{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    gap: 50px;
+
+    background: url(../images/resource-bg-right-full.svg)
+        no-repeat;
+    background-position: -55px 650px;
+    background-size: clamp(10rem, 40vw, 70rem);
+    overflow: visible;
+}
+
+.resources__section-1{
+    display: flex;
+    flex: 1;
+    flex-direction: row;
+    justify-content: space-around;
+    width: 100%;
+    gap: 70px;
+
+}
+
+.section-1__column-left{
+    display: flex;
+    padding: 20px 0px;
+    max-width: 100%;
+
+}
+
+.text-wrapper{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+
+    h2{
+        font-size: var(--text-h2);
+        font-weight: 600;
+        max-width: 700px;
+        color: var(--color-secundary-tone-4);
+    }
+    p{
+        font-weight: 500;
+        max-width: 700px;
+    }
+}
+
+.section-1__column-right{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    gap: 90px;
+    padding: 30px 0px;
+    max-width: 100%;
+
+    .resources-wrapper{
+        display: flex;
+        flex-direction: row;
+        gap: 50px;
+
+        .resources__resource{
+            h4{
+                font-size: var(--text-h5);
+                color: var(--color-text-main);
+                max-width: 500px;
+            }
+            p{
+                max-width: 500px;
+                color: var(--color-text-main);
+            }
+        }
+    }
+}
+
+.resources__section-2{
+    display: flex;
+    flex: 2;
+    flex-direction: row;
+    justify-content: right;
+    align-items: flex-start;
+    width: 100%;
+
+    padding: 60px 0px;
+}
+
+.section-2__column-left{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    align-items: flex-start;
+    gap: 10px;
+
+    img {
+        position: static;
+
+        max-width: 90%;
+        aspect-ratio: 3/2.6;
+    }
+}
+
+.section-2__column-right{
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: right;
+    align-items: flex-end;
+    width: fit-content;
+    
+}
+
+.resources__section-3{
+    display: flex;
+    flex: 1;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+    align-items: flex-start;
+}

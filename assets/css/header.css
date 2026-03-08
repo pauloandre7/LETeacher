@@ -1,0 +1,63 @@
+@import url('assets/css/variables.css');
+
+header {
+    background: var(--gradient-linear-background);
+    
+    display: flex;
+    justify-content: center;    
+
+    padding: 12px 10%;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+.header__navbar{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.navbar__links{
+    display: flex;
+    flex-direction: row;
+    align-items: end;
+
+    gap: 20px;
+    list-style: none;
+    
+    a{ 
+        font-weight: 600;
+        font-size: var(--text-h6);
+        color: var(--color-text-light);
+        text-decoration: none;
+        cursor: pointer;
+
+        &:hover{
+            border-bottom: 2px solid var(--color-highlight);
+        }
+    }
+
+}
+.navbar__btn--cta{
+    &:hover{
+        background-color:antiquewhite;
+    }
+}
+
+
+@media (max-width: 1200px) {
+    header{
+        padding: 20px 4%;
+    }
+    .navbar__links{
+
+        display: none;
+
+        a{
+            display: none;
+        }
+    }
+        
+}
