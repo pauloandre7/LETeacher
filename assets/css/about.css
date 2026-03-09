@@ -1,0 +1,95 @@
+#about{
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+
+	gap: 90px;
+
+	padding: 50px 10%;
+	
+}
+
+.about__title-wrapper{
+
+	display: flex;
+	flex-direction: column;
+	
+	.about__title{
+		color: var(--color-text-light);
+		font-size: clamp(var(--text-h6), 2.5vw, var(--text-h2));
+	}
+
+	.about__text-divisor{
+		display: absolute;
+		height: 5px;
+		border-radius: 15px;
+
+		background-color: var(--color-highlight); 
+	}
+}
+
+.about__content{
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	justify-content: space-around;
+
+	width: 100%;
+	
+	gap: 50px;
+
+	.about__image-side{
+		display: flex;
+		justify-content: flex-end;
+		align-items: center;
+		width: fit-content;
+
+		padding: 15px 15px 0px 15px;
+
+		background-color: #F8E0FA;
+		border-radius: 20px;
+		
+		img{
+			display: block; /* Necessary, i was having trouble with the inline property. The bottom paddin wasn't working*/
+			
+			max-width: clamp(250px, 40vw, 800px);
+			aspect-ratio: 510/640;
+			height: auto;
+		}
+	}
+
+	.about__text-side{
+		display: flex;
+		flex-direction: column;
+
+		width: clamp(350px, 25vw, 600px);
+		gap: 10px;
+
+		color: var(--color-text-light);
+
+		h4{
+			font-size: clamp(var(--text-h6), 1.5vw, var(--text-h4));
+			font-weight: 700;
+		}
+
+		p{
+			font-size: clamp(var(--text-base), 1vw, var(--text-base));
+		}
+		
+	}
+}
+
+@media (max-width: 910px){
+
+	#about{
+		padding: 50px 4%;
+		gap: 40px;
+	}
+
+	.about__content{
+		flex-direction: column;
+		gap: 30px;
+	}
+	
+}
