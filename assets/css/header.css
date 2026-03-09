@@ -41,6 +41,7 @@ header {
 
 }
 .navbar__btn--cta{
+	color: var(--color-main-tone-2);
     &:hover{
         background-color:antiquewhite;
     }
@@ -58,6 +59,10 @@ header {
         a{
             display: none;
         }
+    }
+
+    .navbar__btn--cta{
+    	font-size: var(--text-base);
     }
         
 }
