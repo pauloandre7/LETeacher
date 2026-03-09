@@ -3,12 +3,12 @@
     flex-direction: column;
     align-items: center;
     justify-content: space-between;
-    gap: 50px;
+    padding: 80px 10%;
+    gap: 10px;
 
-    background: url(../images/resource-bg-right-full.svg)
-        no-repeat;
-    background-position: -55px 650px;
-    background-size: clamp(10rem, 40vw, 70rem);
+	background-color: var(--color-text-light);
+	border-radius: 50px;
+    
     overflow: visible;
 }
 
@@ -24,7 +24,7 @@
 
 .section-1__column-left{
     display: flex;
-    padding: 20px 0px;
+    padding: 40px 0px;
     max-width: 100%;
 
 }
@@ -52,7 +52,7 @@
     flex-direction: column;
     align-items: flex-end;
     gap: 90px;
-    padding: 30px 0px;
+    padding: 50px 0px;
     max-width: 100%;
 
     .resources-wrapper{
@@ -76,27 +76,28 @@
 
 .resources__section-2{
     display: flex;
-    flex: 2;
     flex-direction: row;
-    justify-content: right;
-    align-items: flex-start;
+    justify-content: space-between;
+    align-items: center;
     width: 100%;
 
+	gap: 70px;
     padding: 60px 0px;
 }
 
 .section-2__column-left{
     display: flex;
     flex-direction: column;
-    width: 100%;
-    align-items: flex-start;
-    gap: 10px;
+    padding: 0px 0px;
+    width: fit-content;
+    
+    justify-content: flex-start;
+    align-items: center;
+
 
     img {
-        position: static;
-
-        max-width: 90%;
-        aspect-ratio: 3/2.6;
+		max-width: 100%;
+        aspect-ratio: 519/586;
     }
 }
 
@@ -104,9 +105,8 @@
     display: flex;
     flex-direction: row-reverse;
     justify-content: right;
-    align-items: flex-end;
+    align-items: center;
     width: fit-content;
-    
 }
 
 .resources__section-3{
@@ -115,5 +115,158 @@
     flex-direction: row;
     justify-content: space-between;
     width: 100%;
-    align-items: flex-start;
+    align-items: center;
+}
+
+.section-3__column-left{
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: right;
+    align-items: center;
+    width: fit-content;
+    height: 100%;
+    
+}
+
+.section-3__column-right{
+    display: flex;
+    flex-direction: column;
+    padding: 0px 0px;
+    width: fit-content;
+    
+    justify-content: flex-start;
+    align-items: center;
+
+    img {
+		max-width: 100%;
+        aspect-ratio: 522/516;
+    }	
+}
+
+@media (max-width: 910px){
+	#resources{
+	    padding: 40px 4%;
+	    gap: 10px;
+	    
+		border-radius: 40px;
+	}
+
+	.resources__section-1{
+	    flex-direction: column;
+	    justify-content: center;
+	    width: 100%;
+	    gap: 10px;
+
+	}
+
+	.section-1__column-left{
+	    display: flex;
+	    padding: 0px 0px;
+	    max-width: fit-content;
+
+	}
+
+	.text-wrapper{
+	    display: flex;
+	    flex-direction: column;
+	    align-items: flex-start;
+	    gap: 10px;
+
+	    h2{
+	        font-size: var(--text-h4);
+	        font-weight: 600;
+	        max-width: 700px;
+	        color: var(--color-secundary-tone-4);
+	    }
+	    p{
+	    	font-size: var(--text-small);
+	        font-weight: 500;
+	        max-width: 700px;
+	    }
+	}
+
+	.section-1__column-right{
+	    gap: 50px;
+	    padding: 50px 0px;
+	    max-width: 100%;
+
+	    .resources-wrapper{
+	        display: flex;
+	        flex-direction: row;
+	        gap: 20px;
+			
+	        .resources__resource{
+
+				img{
+					width: 50px;
+				}
+	        
+	            h4{
+	                font-size: var(--text-h6);
+	            }
+	            p{
+	            	font-size: var(--text-small);
+	            }
+	        }
+	    }
+	}
+
+	
+	.resources__section-2{
+	    flex-direction: column;
+	    justify-content: center;
+	    align-items: center;
+	
+		gap: 10px;
+	    padding: 10px 0px 0px 0px;
+	}
+	
+	.section-2__column-left{
+	    display: flex;
+	
+	    img {
+			max-width: 100%;
+	        aspect-ratio: 519/586;
+	    }
+	}
+	
+	.section-2__column-right{
+	    display: flex;
+	}
+	
+	.resources__section-3{
+	    display: flex;
+	    flex-direction: column-reverse;
+	    justify-content: space-between;
+	    align-items: center;
+	    padding: 40px 0px 20px 0px;
+	    width: 100%;
+	    gap: 40px;
+	}
+	
+	.section-3__column-left{
+	    display: flex;
+	    flex-direction: row-reverse;
+	    justify-content: right;
+	    align-items: center;
+	    width: fit-content;
+	    height: 100%;
+	    
+	}
+	
+	.section-3__column-right{
+	    display: flex;
+	    flex-direction: column;
+	    padding: 0px 0px;
+	    width: fit-content;
+	    
+	    justify-content: flex-start;
+	    align-items: center;
+	
+	    img {
+			max-width: 100%;
+	        aspect-ratio: 522/516;
+	    }	
+	}
+	
 }
