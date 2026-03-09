@@ -10,7 +10,7 @@
 }
 
 body{
-    background-color: var(--color-text-light);
+    background: var(--gradient-linear-background);
     position: relative;
 }
 
