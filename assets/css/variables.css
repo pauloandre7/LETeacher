@@ -31,7 +31,6 @@
     --color-secundary-tone-4: #4C1485;
 
     /*Gradients variables*/
-    --gradient-linear-background: linear-gradient(270deg, #572092 46.75%, #7E43BE 102.36%);;
-    --gradient-linear-components: linear-gradient(270deg, #6C1478 13.46%, #7E43BE 96.63%);
-    --gradient-linear-text: linear-gradient(270deg, #7F1D8B 30.29%, #7E43BE 100%);
+    --gradient-linear-background: linear-gradient(270deg, #572092 46.75%, #7E43BE 102.36%);
+    --gradient-linear-components: linear-gradient(270deg, #7F1D8B 30.29%, #7E43BE 100%);
 }
