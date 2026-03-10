@@ -90,6 +90,10 @@
 	.about__content{
 		flex-direction: column;
 		gap: 30px;
+
+		.about__text-side{
+			width: 100%;
+		}
 	}
 	
 }

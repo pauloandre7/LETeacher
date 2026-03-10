@@ -57,6 +57,7 @@ section{
         color: var(--color-secundary-tone-4);
     }
     p{
+    	font-size: var(--texto-base);
         font-weight: 500;
         max-width: 700px;
     }

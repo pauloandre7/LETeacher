@@ -1,12 +1,12 @@
 #students{
 	display: flex;
-	flex-direction: row;
+	flex-direction: column;
 	justify-content: space-between;
 	align-items: flex-start;
 
 	overflow: hidden;
 	padding: 100px 10%;
-	gap: 50px;
+	gap: 90px;
 	border-radius: 50px;
 
 	background-color: var(--color-text-light);
@@ -17,10 +17,20 @@
 	flex: 1;
 	flex-direction: column;
 	align-items: top;
-	position: sticky;
 
 	gap: 50px;
 	width: 100%;
+
+	.text-wrapper{
+	    /*overwriting class from styles*/
+	    h2{
+	        max-width: 1000px;
+	    }
+	    p{
+	        font-weight: 500;
+	        max-width: 900px;
+	    }
+	}
 
 	a{
 		color: var(--color-text-light);
@@ -33,12 +43,12 @@
 .students__column-right{
 	display: flex;
 	flex: 2;
+	flex-direction: row;
 	min-width: 0;
 	max-width: fit-content;
-	flex-direction: column;
 	justify-content: center;
 	
-	gap: 100px;
+	gap: 70px;
 
 	.students__testimonial-wrapper{
 		display: flex;
@@ -75,6 +85,12 @@
 	}
 }
 
+@media (max-width: 1200px){
+	.students__column-right{
+		flex-direction: column;
+	}
+}
+
 @media (max-width: 910px){
 	#students{
 		flex-direction: column;
@@ -83,6 +99,18 @@
 	}
 	
 	.students__column-left{
+		.text-wrapper{
+		    /*overwriting class from styles*/
+		    h2{
+		        max-width: 1000px;
+		    }
+		    p{
+		        font-weight: 500;
+		        font-size: var(--text-base);
+		        max-width: 900px;
+		    }
+		}
+	
 		a{
 			display: none;
 		}
@@ -91,6 +119,7 @@
 	.students__column-right{	
 		.students__testimonial-wrapper{
 			max-width: clamp(30%, 100%, 100%);
+			
 		}	
 	}
 }
