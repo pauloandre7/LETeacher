@@ -47,7 +47,7 @@
         max-width: 900px;
         font-style: normal;
         font-weight: 700;
-        font-size: var(--text-h1);
+        font-size: clamp(var(--text-h4), 4vw, var(--text-h1));
         
         color: var(--color-highlight);
 
@@ -56,7 +56,7 @@
     .home__sub-headline{
         max-width: 900px;
         font-weight: 500;
-        font-size: var(--text-h5);
+        font-size: clamp(var(--text-h6), 1.5vw, var(--text-h5));
 
         color: var(--color-text-light);
     }
@@ -65,8 +65,12 @@
 
 .home__btn--cta{
 	color: var(--color-main-tone-1);
-    font-size: var(--text-h5);
-    padding: 15px 20px;
+    font-size: clamp(var(--text-base), 1.5vw , var(--text-h5));
+    padding: 10px 15px;
+
+    &:hover{
+    	background-color: antiquewhite;
+    }
 }
 
 .home__image-wrapper{
@@ -76,8 +80,8 @@
     align-items: left;
     justify-content: center;
 
-    max-width: 9000px;
-    aspect-ratio: 2.4/3;
+    max-width: fit-content;
+    height: fit-content;
     padding: 10px 10px 0px 10px;
 
     /*background: #faf6fe18;
@@ -107,7 +111,7 @@
         }
 
         p{
-            font-size: (var(--text-base));
+            font-size: clamp(var(--text-small), 1vw, var(--text-base));
             font-weight: 500;
             color: var(--color-main-tone-3);
         }
@@ -124,23 +128,25 @@
         left: 45%;
     }
 
-    /*Teacher image*/
+    /*Teacher image 
     .home__image{
         display: inherit;
         position: absolut;
         z-index: 5;
 
         align-self: center;
-        width: 98%;
+        width: 10px;
+        height: auto;
     }
+    */
 
     .home__image-bg{
     	display: inherit;
     	position: relative;
     	z-index: 1;
-    	
+    		
     	align-self: center;
-    	width: cover;
+    	width: clamp(40%, 100vw, 100%);
     }
 }
 
