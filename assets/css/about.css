@@ -93,6 +93,11 @@
 
 		.about__text-side{
 			width: 100%;
+
+			.about__name{
+				justify-self: center;
+				align-self: center;
+			}
 		}
 	}
 	
